@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanShelf — Everyday Essentials Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Urban<span>Shelf</span></a>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products...">
+      </div>
+
+      <button class="cart-btn" id="openCartBtn">
+        Cart (<span id="cartCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Banner -->
+    <section class="hero">
+      <h1>Simple, Useful Gear for Everyday Life</h1>
+      <p>Clean designs, fair prices, and fast delivery straight to your door.</p>
+    </section>
+
+    <!-- Category Filter Buttons -->
+    <section class="filters" id="categoryButtons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="electronics">Electronics</button>
+      <button class="filter-btn" data-category="bags">Bags</button>
+      <button class="filter-btn" data-category="desk">Desk Setup</button>
+      <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid" id="productsGrid">
+      <!-- Products will be added here by JavaScript -->
+    </section>
+  </main>
+
+  <!-- Cart Drawer & Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-btn" id="closeCartBtn">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will be added here by JavaScript -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Total:</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Place Order</button>
+    </div>
+  </aside>
+
+  <!-- Simple Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 UrbanShelf Store. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
